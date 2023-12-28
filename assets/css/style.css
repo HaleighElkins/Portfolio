@@ -1,0 +1,87 @@
+:root {
+--primary-color: #848A84;
+--secondary-color: #9f938C;
+--third-color: #6A787E;
+--dark-color: #3F3328;
+--font-family-2: 'Dancing Script', cursive;
+--font-family-1: 'Diphylleia', serif;
+--font-family-3: 'Slabo 27px', serif;
+/* Actually switch families later */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* add html? */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--secondary-color);
+    font-family: var(--font-family-1);
+}
+
+.header {
+    padding: 30px;
+    font-family: var(--font-family-2);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    position:relative;
+    max-width: 50px;
+    max-height: 50%;
+ /* Git the image smaller?! */
+}
+
+header h1 {
+    color: var(--dark-color);
+    margin: 5px 10px 5px 15px;
+    font-size: 80px;
+    /* change font size as I go */
+}
+
+header nav {
+    padding-top: 50px;
+    margin-right: 50px;
+    font-family: var(--font-family-1);
+    font-size: 30px;
+    justify-content: flex-end;
+    display: flex;
+    /* Dont forget to change font size later */
+
+}
+
+header nav ul li {
+    margin-left: 25px;
+    display: inline-block;
+}
+
+a {
+    color: var(--third-color);
+    text-decoration: dotted; 
+/* Just to see what the text decoration is */
+/* a is the links for the header */
+}
+
+/* Add hover? */
+header nav ul li a  {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+p {
+    font-size: 25px;
+    padding: 5px 25px 0 20px;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
