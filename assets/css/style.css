@@ -1,8 +1,8 @@
 :root {
---primary-color: #848A84;
---secondary-color: #9f938C;
---third-color: #6A787E;
---dark-color: #3F3328;
+--primary-color: #7E948D;
+--secondary-color: #CFB8A4;
+--third-color:#7A9BA6;
+--dark-color: #201F19;
 --font-family-2: 'Dancing Script', cursive;
 --font-family-1: 'Diphylleia', serif;
 --font-family-3: 'Slabo 27px', serif;
@@ -15,7 +15,6 @@
     padding: 0;
 }
 
-/* add html? */
 html {
     height: 100%;
 }
@@ -32,11 +31,6 @@ body {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-}
-
-.profile-pic {
-    position:relative;
-    margin: 12px;
 }
 
 header h1 {
@@ -62,6 +56,13 @@ header nav ul li {
     display: inline-block;
 }
 
+.profile-pic {
+    position:relative;
+    justify-content: flex-end;
+    margin: 12px;    
+    display: flex;
+}
+
 a {
     color: var(--third-color);
     text-decoration: dotted; 
@@ -69,16 +70,16 @@ a {
 /* a is the links for the header */
 }
 
-/* Add hover? */
-header nav ul li a  {
+header nav ul li a:hover  {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 20px;
+    text-shadow: none;
 }
 
 p {
     font-size: 25px;
-    padding: 5px 25px 0 20px;
+    padding: 5px 35px 0 20px;
     width: 50%;
     justify-content: space-evenly;
     align-items: center;
@@ -88,10 +89,12 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px;
 }
 
-.section.details {
-    margin: 20px;
+.section-detail {
+    margin: 20px auto;
     padding-bottom: 50px;
     width: 100%;
     display: flex;
@@ -106,4 +109,126 @@ section {
     text-align: right;
     padding: 40px;
     flex-basis: 20%;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.work-container {
+    display: flex;
+    flex: 0 0 60%;
+    flex-wrap: wrap;
+}
+
+.item-detail {
+    position: relative;
+    margin: 15px;
+    width: fit-content;
+    
+}
+
+/* Add hover? */
+.item-detail {
+    background-color: var(--primary-color);
+}
+
+img {
+    border: 5px solid var(--third-color);
+}
+
+.descript {
+    position:absolute;
+    padding: 10px;
+    bottom: 15px;
+    left: 5px;
+    text-align: left;
+    font-size: 15px;
+    background-color: var(--third-color);
+}
+
+@media screen and (max-width:980px) {
+    header {
+        padding: 0;
+        justify-content: center;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+        }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    p {
+        flex: 100%;
+        text-align: left;
+        justify-content: left;
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .section.detail {
+        flex-direction: column;
+    }
+    
+    .section-title {
+        font-size: 50px;
+        text-align: center;
+        flex-direction: column;
+        border-bottom: 5px solid;
+        border-right: none;
+        padding: 20px;
+        margin: 0;
+    }
+
+    p {
+        flex-direction: column;
+        justify-content: center;
+        display: contents;
+        padding: 10px;        
+    }
+
+    .profile-pic {
+        justify-content: center;
+    }
+
+    .item-detail {
+        flex: 2 100%;
+        text-align: left;
+        justify-content: left;
+        display: flex;
+    }
+
+    .item-detail img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 90%;
+    }
+    
+    a {
+        flex-direction: column;
+        justify-content: center;
+        display: contents;
+        padding: 10px;
+    }
 }
