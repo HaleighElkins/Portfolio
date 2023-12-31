@@ -3,10 +3,9 @@
 --secondary-color: #CFB8A4;
 --third-color:#7A9BA6;
 --dark-color: #201F19;
---font-family-2: 'Dancing Script', cursive;
---font-family-1: 'Diphylleia', serif;
+--font-family-1: 'Dancing Script', cursive;
+--font-family-2: 'Diphylleia', serif;
 --font-family-3: 'Slabo 27px', serif;
-/* Actually switch families later */
 }
 
 * {
@@ -22,17 +21,17 @@ html {
 body {
     height: 100%;
     background-color: var(--secondary-color);
-    font-family: var(--font-family-1);
+    font-family: var(--font-family-2);
 }
 
 .header {
     padding: 30px;
-    font-family: var(--font-family-2);
+    font-family: var(--font-family-1); 
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
+    /* background image (check hor. css. heigh 300px width 100% */
 }
-
 header h1 {
     color: var(--dark-color);
     margin: 5px 10px 5px 15px;
@@ -43,11 +42,12 @@ header h1 {
 header nav {
     padding-top: 50px;
     margin-right: 50px;
-    font-family: var(--font-family-1);
+    font-family: var(--font-family-2);
     font-size: 25px;
     justify-content: flex-end;
     display: flex;
     /* Dont forget to change font size later */
+    /* Try padding bottom if you want nav to stick to bottom */
 
 }
 
@@ -61,6 +61,7 @@ header nav ul li {
     justify-content: flex-end;
     margin: 12px;    
     display: flex;
+    flex-wrap: wrap;
 }
 
 a {
@@ -111,7 +112,7 @@ section {
     flex-basis: 20%;
 }
 
-.primary-border {
+.section-border {
     border-color: var(--primary-color);
 }
 
@@ -125,11 +126,13 @@ section {
     position: relative;
     margin: 15px;
     width: fit-content;
+    flex-wrap: wrap;
 }
 
 .item-detail:hover {
-    background-color: var(--primary-color);
-    box-shadow: #736066;
+    box-shadow: 20px 10px 5px #736066;
+
+
 }
 
 img {
@@ -176,6 +179,8 @@ img {
         text-align: left;
         justify-content: left;
     }
+
+
 }
 
 @media  screen and (max-width: 768px) {
@@ -186,27 +191,27 @@ img {
 
     .section.detail {
         flex-direction: column;
+        -ms-flex-align: center;
     }
     
     .section-title {
         font-size: 50px;
         text-align: center;
         flex-direction: column;
-        border-bottom: 5px solid;
-        border-right: none;
-        padding: 15x;
+        border-right: 15px;
+        padding: 15px;
         margin: 0;
     }
 
     p {
+        flex-wrap: wrap;
+        justify-content: center;
         flex-direction: column;
-        justify-content: center;
-        display: contents;
-        padding: 10px;        
-    }
-
-    .profile-pic {
-        justify-content: center;
+        flex: 0 32%;
+        width:90%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        margin-right: 0px;
     }
 
     .item-detail {
@@ -230,4 +235,9 @@ img {
         display: contents;
         padding: 10px;
     }
+
+    .item-detail:hover {
+        box-shadow:0px 0px 0px #736066;
+      }
+    
 }
