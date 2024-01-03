@@ -25,7 +25,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 ## Credits 
-    For placeholder images= https://unsplash.com/
-    Color wheel url: https://www.canva.com/colors/color-wheel/
-    Color Palette Generator: https://www.canva.com/colors/color-palette-generator/
-    Fonts: https://fonts.google.com/
+These are the websites that have helped me with creating my Portfolio website:
+* For placeholder images= https://unsplash.com/
+* Color wheel url: https://www.canva.com/colors/color-wheel/
+* Color Palette Generator: https://www.canva.com/colors/color-palette-generator/
+* Fonts: https://fonts.google.com/
