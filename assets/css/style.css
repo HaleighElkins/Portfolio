@@ -67,7 +67,6 @@ header nav ul li {
 a {
     color: var(--third-color);
     text-decoration: solid; 
-/* Just to see what the text decoration is */
 /* a is the links for the header */
 }
 
@@ -131,8 +130,6 @@ section {
 
 .item-detail:hover {
     box-shadow: 20px 10px 5px #736066;
-
-
 }
 
 img {
@@ -180,10 +177,9 @@ img {
         justify-content: left;
     }
 
-
 }
 
-@media  screen and (max-width: 768px) {
+@media  screen and (max-width: 830px) {
     section {
         padding: 30px 15px;
         text-align: center;
@@ -240,4 +236,13 @@ img {
         box-shadow:0px 0px 0px #736066;
       }
     
-}
+      @media  screen and (max-width: 725p) {
+        .profile-pic {
+            flex-direction: column;
+            justify-content: baseline;
+            flex-wrap: wrap;
+
+        }
+      }
+
+    }
