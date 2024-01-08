@@ -1,5 +1,6 @@
 # Portfolio
-My Work Portfolio
+My Work Portfolio for Challenge 2 for my bootcamp. 
+The major issues I had with creating this page was flexing my my images properly. My portfolio picture was something that still will have issues.
 
 ## User Story
 
@@ -30,3 +31,8 @@ These are the websites that have helped me with creating my Portfolio website:
 * Color wheel url: https://www.canva.com/colors/color-wheel/
 * Color Palette Generator: https://www.canva.com/colors/color-palette-generator/
 * Fonts: https://fonts.google.com/
+
+
+* I also worked with a fellow student Tim with working on my flex boxes.
+
+## Deployment
