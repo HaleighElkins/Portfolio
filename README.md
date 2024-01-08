@@ -36,3 +36,4 @@ These are the websites that have helped me with creating my Portfolio website:
 * I also worked with a fellow student Tim with working on my flex boxes.
 
 ## Deployment
+https://haleighelkins.github.io/Portfolio/
